@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() 
+    {
+      real numeroUm, numeroDois, numeroTres, media, maior, menor
+
+      escreva("Digite o primeiro número: ")
+      leia(numeroUm)
+      escreva("Digite o segundo número: ")
+      leia(numeroDois)
+      escreva("Digite o terceiro número: ")
+      leia(numeroTres)
+
+      maior = numeroUm
+      se (numeroDois > numeroUm)
+      {maior = numeroDois}
+      se (numeroTres > numeroDois)
+      {maior = numeroTres}
+      
+      menor = numeroUm
+      se(numeroDois < numeroUm)
+      {menor = numeroDois}
+      se(numeroTres < menor)
+      {menor = numeroTres }
+
+      media = (numeroUm+numeroDois+numeroTres)/3
+
+      escreva("\nO maior número é: ", maior)
+      escreva("\nO menor número é: ", menor)
+      escreva("\n\nA média dos números é: ", media)
+    }
+}
