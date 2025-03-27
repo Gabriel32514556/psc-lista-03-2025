@@ -14,7 +14,7 @@ programa {
     senao{
     numeroMaior = numeroDois
     }
-    numeroAleatorio = gerar_aleatorio(num1, num2)
+    numeroAleatorio = gerar_aleatorio(numeroUm, numeroDois)
     
     se(numeroAleatorio % 2==0){
       escreva("\nSorteio de número aleatório: " ,numeroAleatorio)
